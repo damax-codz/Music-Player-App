@@ -188,8 +188,8 @@ color: black;
       cursor: pointer;
       
   }
- #lyrics{
-     width: 400px;
+#lyrics{
+     width: 350px;
      height: 400px;
      margin-top: 40px;
      margin-bottom: 10px;
@@ -198,12 +198,12 @@ color: black;
      overflow-x: hidden;
      display: flex;
      flex-direction: column;
-     font-family: 'Dongle', sans-serif;
+     font-family: 'Fredoka One', ;
  }
  #lyrics>span>p{
      color: white;
      font-weight: bold;
-     font-size: 45px;
+     font-size: 35px;
      padding-left: 10px;
  }
  #lyrics>span{
@@ -212,6 +212,6 @@ color: black;
      font-weight: bolder;
      width: 300px;
      margin-left: 10px;
-     font-size: 35px;
+     font-size: 25px;
      transition: margin-top 2s;
  }
