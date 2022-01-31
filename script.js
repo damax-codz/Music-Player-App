@@ -244,25 +244,25 @@ const changeLyricsColor=()=>{
     let location = window.location.href
     let LyricsColor = document.getElementById('lyrics')
     switch(location){
-        case 'http://127.0.0.1:5500/song-one.html':
+        case 'https://damax-codz.github.io/Music-Player-App/song-one.html':
         LyricsColor.style.backgroundColor='rgb(185, 96, 226)'
         break;
-        case 'http://127.0.0.1:5500/song-two.html':
+        case 'https://damax-codz.github.io/Music-Player-App/song-two.html':
         LyricsColor.style.backgroundColor='rgb(204, 74, 23)'
         break;
-        case 'http://127.0.0.1:5500/song-three.html':
+        case 'https://damax-codz.github.io/Music-Player-App/song-three.html':
             LyricsColor.style.backgroundColor='rgb(148, 146, 144)'
         break;
-        case 'http://127.0.0.1:5500/song-four.html':
+        case 'https://damax-codz.github.io/Music-Player-App/song-four.html':
             LyricsColor.style.backgroundColor='rgb(61, 90, 187)'
         break;
-        case 'http://127.0.0.1:5500/song-five.html':
+        case 'https://damax-codz.github.io/Music-Player-App/song-five.html':
             LyricsColor.style.backgroundColor='rgb(49, 146, 78)'
         break;
-        case 'http://127.0.0.1:5500/song-six.html':
+        case 'https://damax-codz.github.io/Music-Player-App/song-six.html':
             LyricsColor.style.backgroundColor='rgb(174, 192, 179)'
         break;
-        case 'http://127.0.0.1:5500/song-seven.html':
+        case 'https://damax-codz.github.io/Music-Player-App/song-seven.html':
             LyricsColor.style.backgroundColor='rgb(109, 108, 108)'
         break;
     }
