@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3e330e8926.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="playing.css">
+     <script src="script.js"></script>
+</head>
+<body onload="changeLyricsColor()">
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 3665.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <span class="backarrow">
+     <a href="index.html" id="return">  <i class="fas fa-arrow-left"></i></a>
+    </span>
+    <div class="picture-container">
+      
+       <img src="https://www.naijaloaded.com.ng/wp-content/uploads/2021/11/Davido-Ft.-Focalistic-Champion-Sound.jpeg" alt="" id="songimage">
+    </div>
+    <div class="controls">
+        <span class="back" onclick="function prev(){location.replace('song-four.html')};prev()">
+            <i class="fas fa-step-backward"></i>
+         </span> 
+     <span class="play" onclick="playsong()" style="border: 0.5px solid rgba(0, 0, 0, 0.575); border-radius: 50%; padding: 9px;">
+        <i class="fas fa-play" id="pauseimage"></i>
+     </span>
+     <span class="next" onclick="function next(){location.replace('song-six.html')};next()">
+        <i class="fas fa-step-forward"></i>
+     </span>
+     
+    </div>
+    <!-- <div class="playlist">
+        <span style="font-size: 20px;color: rgb(97, 92, 92);">playlist</span>
+        <span style="font-size: 22px;"><b>Latest trend EP</b></span>
+    </div> -->
+    <div class="functionalities">
+        <span class="love" onclick="love()">
+            <i class="fas fa-heart"></i>
+        </span>
+        <span class="replay" onclick="replay()">
+            <i class="fas fa-redo"></i>
+        </span>
+        <span class="shuffle" onclick="shuffle()">
+            <i class="fas fa-random"></i>
+        </span>
+    </div>
+    <div class="reactor">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <div class="chill-mode" onclick="chillMode()">
+        <span><i class="fas fa-headphones"></i>     chill mode     <i class="fas fa-headphones"></i></span>
+    </div>
+    <div class="song-content">
+        <span class="name">
+            Champion Sound
+        </span>
+        <span class="artist">
+            Davido x Focalistic
+        </span>
+    </div>
+    <div class="range">
+        <input type="range" id="ranger" value="0" min="0" max="100">
+        
+    </div>
+    <audio  id="myaudio" controls>
+      
+        <source src="Davido-Ft-Focalistic-Champion-Sound-(TrendyBeatz.com).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <div id="lyrics">
+  
+        <span id="mainlyrics">
+            <p>Lyrics</p>
+            Tju tju
+Baddest
+Tju
+Ase trap tse ke pina tsako kasi
+Sa bolela thata ra e kutswa
+Nna Nka sjova sdudla
+Ake rekisi di booka ka mo juta
+Sa bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa (Baddest)
+Sa bolela thata ra e kutswa (Ge ge)
+Nna nka sjova sdudla
+Away now
+Take me away (Take me away)
+Way far away (Go far)
+Ko se fara we (Light me up o Faraday)
+Vele Vele ra e taola
+Since lockdown
+Betchitse ngwanyana 10 tao
+Nou wa e thaopa
+Vele vele ra e taola
+Ra e taola
+Nna nkao kgaola
+Ra e taola
+The way I'm feeling right now
+Mad over you like Runtown
+Tell them make them calm down
+10 years I never gon down
+When they see me dem am frown
+But when them girls see me dem am go down
+Shout out to the South
+And Focalistic with the champion sound (Champion sound)
+Vele Vele ra e taola
+Ra e taola
+Vele Vele ra e taola
+Ra e taola
+Vele Vele ra e taola
+Ra e taola
+Vele Vele ra e taola
+Ra e taola
+Ska bolela thata ra e kutswa (Ge ge)
+Ska bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa (Ge ge)
+Nna nka sjova sdudla
+Ska bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa
+Wa wa we we we we we we welele (Welele)
+Welele (Welele)
+Welele
+Wa wa we we we we we we welele (Welele)
+Welele (Kilele)
+Welele
+Away now
+Away now
+Tju tju tju tju tju
+Tju tju tju tju tju
+Vele Vele ra e taola
+Ra e taola
+Vele Vele ra e taola
+Ra e taola
+Vele Vele ra e taola
+Ra e taola
+Vele Vele ra e taola
+Ra e taola
+Ska bolela thata ra e kutswa (Ge ge)
+Ska bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa (Ge ge)
+Nna nka sjova sdudla
+Ska bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa (Ge ge)
+Sa bolela thata ra e kutswa
+Wa wa we we we we we we welele (Welele)
+Welele (Welele)
+Welele
+Wa wa we we we we we we welele (Welele)
+Welele (Kilele)
+Welele
+
+            </span>
+            </div>
+</body>
+</html>

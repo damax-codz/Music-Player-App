@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3e330e8926.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="playing.css">
+     <script src="script.js"></script>
+</head>
+<body onload="changeLyricsColor()">
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 3665.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <span class="backarrow">
+     <a href="index.html" id="return">  <i class="fas fa-arrow-left"></i></a>
+    </span>
+    <div class="picture-container">
+      
+       <img src="https://i.ytimg.com/vi/IUhN_L24ZhI/maxresdefault.jpg" alt="" id="songimage">
+    </div>
+    <div class="controls">
+        <span class="back" onclick="function prev(){location.replace('song-two.html')};prev()">
+            <i class="fas fa-step-backward"></i>
+         </span> 
+     <span class="play" onclick="playsong()" style="border: 0.5px solid rgba(0, 0, 0, 0.575); border-radius: 50%; padding: 9px;">
+        <i class="fas fa-play" id="pauseimage"></i>
+     </span>
+     <span class="next" onclick="function next(){location.replace('song-four.html')};next()">
+        <i class="fas fa-step-forward"></i>
+     </span>
+    
+    </div>
+    <!-- <div class="playlist">
+        <span style="font-size: 20px;color: rgb(97, 92, 92);">playlist</span>
+        <span style="font-size: 22px;"><b>Latest trend EP</b></span>
+    </div> -->
+    <div class="functionalities">
+        <span class="love" onclick="love()">
+            <i class="fas fa-heart"></i>
+        </span>
+        <span class="replay" onclick="replay()">
+            <i class="fas fa-redo"></i>
+        </span>
+        <span class="shuffle" onclick="shuffle()">
+            <i class="fas fa-random"></i>
+        </span>
+    </div>
+    <div class="reactor">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <div class="chill-mode" onclick="chillMode()">
+        <span><i class="fas fa-headphones"></i>     chill mode     <i class="fas fa-headphones"></i></span>
+    </div>
+    <div class="song-content">
+        <span class="name">
+            DTB
+        </span>
+        <span class="artist">
+            merczz
+        </span>
+    </div>
+    <div class="range">
+        <input type="range" id="ranger" value="0" min="0" max="100">
+        
+    </div>
+    <audio  id="myaudio" controls>
+
+        <source src="Merczz-—-DTB-Dont-Trust-Bitches.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <div id="lyrics">
+  
+        <span id="mainlyrics">
+            <p>Lyrics</p>
+            [Chorus]
+DTB Means dont trust bitches
+What you mean bout dont trust boys
+Know for a fact you could trust all my guys
+We ain't tryna make no bitches cry
+Not tryna break your hear yo im tryna break the charts
+Could you hold me down could you fix my heart
+Pull out the knives from the backstabbers and heal my scars
+DTB Means dont trust bitches
+What you mean bout dont trust boys
+Know for a fact you could trust all my guys
+We ain't tryna make no bitches cry
+Not tryna break your hear yo im tryna break the charts
+Could you hold me down could you fix my heart
+Pull out the knives from the backstabbers and heal my scars
+
+[Verse 1]
+Yo these girls wanna fuck with my head
+Im dtb til the day that i die and
+I dont believe in lovе no more so
+I gave up looking for my wife
+Sеarched so far and i serched so wide
+But clearly she's no where in sight
+Now i'm tryna make elizabeth bride yo
+Elizabeth be my wife cos she never switched
+Like the rest she was still here when i put
+Our love to the test the way that she hold me down
+Yeah she the best of the best
+I'm up grinding late in a night
+Lost a good one but i ain't got time to make it right
+[Chorus]
+DTB Means dont trust bitches
+What you mean bout dont trust boys
+Know for a fact you could trust all my guys
+We ain't tryna make no bitches cry
+Not tryna break your hear yo im tryna break the charts
+Could you hold me down could you fix my heart
+Pull out the knives from the backstabbers and heal my scars
+DTB Means dont trust bitches
+What you mean bout dont trust boys
+Know for a fact you could trust all my guys
+We ain't tryna make no bitches cry
+Not tryna break your hear yo im tryna break the charts
+Could you hold me down could you fix my heart
+Pull out the knives from the backstabbers and heal my scars
+
+[Verse 2]
+Bad one yh she claim that she different
+Well if not then please keep your distance
+Covid 19 don't come within my 2 meteres
+Hennesy heal pain i do litres put my heart
+On ice yeah it freezes
+Hennesy heal pain i do litres put my heart
+On ice yeah it freezes
+            
+            </span>
+            </div>
+</body>
+</html>

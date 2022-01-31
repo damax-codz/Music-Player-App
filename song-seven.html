@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3e330e8926.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="playing.css">
+     <script src="script.js"></script>
+</head>
+<body onload="changeLyricsColor()">
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 3665.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <span class="backarrow">
+     <a href="index.html" id="return">  <i class="fas fa-arrow-left"></i></a>
+    </span>
+    <div class="picture-container">
+      
+       <img src="https://trendybeatz.com/images/Black-Sherif-Second-Sermon-Artwork.jpg" alt="" id="songimage">
+    </div>
+    <div class="controls">
+        <span class="back" onclick="function prev(){location.replace('song-six.html')};prev()">
+            <i class="fas fa-step-backward"></i>
+         </span> 
+     <span class="play" onclick="playsong()" style="border: 0.5px solid rgba(0, 0, 0, 0.575); border-radius: 50%; padding: 9px;">
+        <i class="fas fa-play" id="pauseimage"></i>
+     </span>
+     <span class="next" onclick="function next(){location.replace('song-one.html')};next()">
+        <i class="fas fa-step-forward"></i>
+     </span>
+     
+    </div>
+    <!-- <div class="playlist">
+        <span style="font-size: 20px;color: rgb(97, 92, 92);">playlist</span>
+        <span style="font-size: 22px;"><b>Latest trend EP</b></span>
+    </div> -->
+    <div class="functionalities">
+        <span class="love" onclick="love()">
+            <i class="fas fa-heart"></i>
+        </span>
+        <span class="replay" onclick="replay()">
+            <i class="fas fa-redo"></i>
+        </span>
+        <span class="shuffle" onclick="shuffle()">
+            <i class="fas fa-random"></i>
+        </span>
+    </div>
+    <div class="reactor">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <div class="chill-mode" onclick="chillMode()">
+        <span><i class="fas fa-headphones"></i>     chill mode     <i class="fas fa-headphones"></i></span>
+    </div>
+    <div class="song-content">
+        <span class="name">
+            Second Sermon
+        </span>
+        <span class="artist">
+            Black Sheriff
+        </span>
+    </div>
+    <div class="range">
+        <input type="range" id="ranger" value="0" min="0" max="100">
+        
+    </div>
+    <audio  id="myaudio" controls>
+      
+        <source src="Black_Sherif_-_Second_Sermon.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>     <div id="lyrics">
+  
+        <span id="mainlyrics">
+            <p>Lyrics</p>
+            [Intro: Big Homie Flee]
+
+Yeah anua’nom ne adɔfoɔ
+This is what ya’ll been waiting for
+Wei yɛfrɛno Trap Mosama Disco
+Real niggas in the trap bɔ mo ti’nko
+And all ya’ll fake ass niggas moo’totɔ nko
+Huh shh
+This is that Second Sermon brought to ya’ll by Real Blacko
+Real trenches baby straight outta Konongo Zongo
+[Taaben] with the god body fleako
+Make you no forget the Walahi shape by baby tho
+Yeah, ya’ll know I only fuck with that real shit
+Yɛ yɛntie saa mo corny ass rappers
+Abrohyew ass rappers huh!
+Let’s go Blacko
+
+[Verse 1]
+
+Niggas in the trap mpɛ plenty talking
+I swear to God (eh I swear to God’oo oh)
+Transaction no dam sika bɛyɛ sei
+Chairman a’tia block no so
+Nti Ya Pulli up wɔ ne hɔ (Ne fie)
+Yɛ ne Killa Boys bɛyɛ 12 (Ahaa)
+Ya’frɛ no sɛ yɛwɔ front
+Efie nanim hɔ naa si bra fɔm (Yɛgyina ha)
+Aunty Merie nnim sɛ this be the life a’dey live for here (Accra)
+Things I see with my eyes
+Sɛ meka kyerɛ ma'brewa noa she go stress’oo
+So I Keep it all to myself (Me nkoaa)
+Obiaara nsoma me gangsta yɛ
+Ɛyɛ me’aa me choice ɛyɛ firm (Stand tall)
+Nti nea me’yɛ biaa I’m aware (Ahaa)
+Silence for a minute Rest in Peace to Sister Mariam eh (RIP)
+Nyame mma yɛn Aljanna
+Yɛbɛhyia wo soro hɔ one day
+Then i go tell you my story
+Sɛ wo gyaa yɛ hɔ no’oo
+Mesaa bɛhyɛ Nkran bɛ trappi (Trapping nkoaa)
+I’m doing so many bad things
+But Sika nti me mind hwee
+Me nnim paa wo wɔ heaven nti ɛya'aa ka bi ma me’oo
+Cause i really lose my way
+Ɛnyɛ sei na yɛkyerɛɛ me’oo
+Nso ma'nnyɛ no saa aa
+Ebi’aa na asɛm aba
+Ebi’aa na Asɛm aba
+Nti mo nfa me saa’oo
+[Chorus]
+
+Na Kwaku Frimpong de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm bɛba’aa)
+Killa man de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm bɛba’aa)
+
+Eeeeeeh Kwaku Frimpong de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm Bɛba’aa)
+Eeeeeeh Killa Blacko de asɛm bɛba’oo
+(Asɛm bɛba’oo asɛm Bɛba’aa)
+
+Eeeeeeh Kwaku Frimpong de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm bɛba’aa)
+Eeeeeeh Killa man de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm bɛba’aa)
+
+Eeeeeeh Kwaku Frimpong de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm Bɛba’aa)
+Eeeeeeh Killa Blacko de asɛm bɛba’oo
+(Asɛm bɛba’oo asɛm Bɛba’aa)
+
+[Verse 2]
+
+Eeeeeeh Sad boys in the house (ya’ba)
+Wonka yɛho bi’aa bounce (kɔ fie)
+Yɛ’anto mo nkra unannounce (hwɛ)
+Out of the blue yɛ’ba it’s loud (Sɛ mo suro)
+Ntɛm paa na yɛ roll it tight (mmm)
+Cause ewiase yɛ fake (na yɛɛ shishi)
+I dey laugh you think you wanna fly (ah)
+Nti adeɛ no me wɔ no dwe (Bebreee)
+Word to Ryda bra fie (Bra fie’oo)
+Bra fie na yɛ’twɛn wo’oo (amnesia)
+Marijuana bebree be yi (Ya strappi ahh’oo)
+Yɛ’nkoaa yɛ’ntumi nsɛe no’oo
+
+Word to Ryda bra fie'oo (Bra fie’oo)
+Bra fie na yɛ’twɛn wo’oo (amnesia)
+Marijuana bebree be yi (Ya strappi ahh’oo)
+Yɛ’nkoaa yɛ’ntumi nsɛe no’oo
+
+Ye ye ye (ei) Akoa na sɛe (ɛka aba)
+Ye ye ye (Ahaa) Akoa na Sɛe’oo (ɛka aba’oo)
+
+Ye ye ye (ei) Akoa na sɛe (ɛka aba)
+Ye ye ye (Ahaa) Akoa na Sɛe’oo (ɛka aba’oo)
+
+[Chorus]
+
+Na Kwaku Frimpong de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm bɛba’aa)
+Killa man de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm bɛba’aa)
+
+Eeeeeeh Kwaku Frimpong de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm Bɛba’aa)
+Eeeeeeh Killa Blacko de asɛm bɛba’oo
+(Asɛm bɛba’oo asɛm Bɛba’aa)
+Eeeeeeh Frimpong de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm bɛba’aa)
+Eeeeeeh Killa man de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm bɛba’aa)
+
+Eeeeeeh Kwaku Frimpong de asɛm bɛba’oo!
+(Asɛm bɛba’oo asɛm Bɛba’aa)
+Eeeeeeh Killa Blacko de asɛm bɛba’oo
+(Asɛm bɛba’oo asɛm Bɛba’aa)
+            </span>
+            </div>
+</body>
+</html>

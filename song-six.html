@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3e330e8926.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="playing.css">
+     <script src="script.js"></script>
+</head>
+<body onload="changeLyricsColor()">
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 3665.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <span class="backarrow">
+     <a href="index.html" id="return">  <i class="fas fa-arrow-left"></i></a>
+    </span>
+    <div class="picture-container">
+      
+       <img src="https://www.bellanaija.com/wp-content/uploads/2021/12/262725981_327707245522131_4930486367921434383_n.jpg" alt="" id="songimage">
+    </div>
+    <div class="controls">
+        <span class="back" onclick="function prev(){location.replace('song-five.html')};prev()">
+            <i class="fas fa-step-backward"></i>
+         </span> 
+     <span class="play" onclick="playsong()" style="border: 0.5px solid rgba(0, 0, 0, 0.575); border-radius: 50%; padding: 9px;">
+        <i class="fas fa-play" id="pauseimage"></i>
+     </span>
+     <span class="next" onclick="function next(){location.replace('song-seven.html')};next()">
+        <i class="fas fa-step-forward"></i>
+     </span>
+     
+    </div>
+    <!-- <div class="playlist">
+        <span style="font-size: 20px;color: rgb(97, 92, 92);">playlist</span>
+        <span style="font-size: 22px;"><b>Latest trend EP</b></span>
+    </div> -->
+    <div class="functionalities">
+        <span class="love" onclick="love()">
+            <i class="fas fa-heart"></i>
+        </span>
+        <span class="replay" onclick="replay()">
+            <i class="fas fa-redo"></i>
+        </span>
+        <span class="shuffle" onclick="shuffle()">
+            <i class="fas fa-random"></i>
+        </span>
+    </div>
+    <div class="reactor">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <div class="chill-mode" onclick="chillMode()">
+        <span><i class="fas fa-headphones"></i>     chill mode     <i class="fas fa-headphones"></i></span>
+    </div>
+    <div class="song-content">
+        <span class="name">
+            Emiliana
+        </span>
+        <span class="artist">
+            cKay
+        </span>
+    </div>
+    <div class="range">
+        <input type="range" id="ranger" value="0" min="0" max="100">
+        
+    </div>
+    <audio  id="myaudio" controls>
+      
+        <source src="Ckay-Emiliana-New-Song-(TrendyBeatz.com).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <div id="lyrics">
+  
+        <span id="mainlyrics">
+            <p>Lyrics</p>
+            All because of you, I be on the phone, all night long, oh
+No be small thing wey you do to me, oh no, no, no
+I be on my business, shawty
+But you be on my mind, shawty
+Ebelebe oloma, my honey, aah-ah
+Kiss me through the cellular, kiss me through the phone
+Can't you see I'm into ya? Can't you see I'm in love?
+Kiss me through the cellular, kiss me through the phone
+You're messin' with my medulla, highkey, I don kolo, oh no, no
+Emiliana, oh Emiliana, oh Emiliana, oh no
+Emiliana, oh Emiliana, oh Emiliana, oh no
+You're one in a million, oh, in a million, oh, in a million, oh no
+My Emiliana, oh Emiliana, oh Emiliana, oh no
+Girl, I wanna, wanna know what it feel like
+What it feel like
+Make I know as e bе for real life
+For real lifе
+Inna my condo
+Lovin' up your body, in fast and slow mo
+If I hit you with my combo
+Girl, you will never ever let me go, hold on to me, oh no-oh
+Kiss me through the cellular, kiss me through the phone
+Can't you see I'm into ya? Can't you see I'm in love?
+Kiss me through the cellular, kiss me through the phone
+You're messin' with my medulla, highkey, I don kolo, oh no, no
+Emiliana, oh Emiliana, oh Emiliana, oh no
+Emiliana, oh Emiliana, oh Emiliana, oh no
+You're one in a million, oh, in a million, oh, in a million, oh no
+My Emiliana, oh Emiliana, oh Emiliana, oh no
+            </span>
+            </div>
+</body>
+</html>

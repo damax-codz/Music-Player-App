@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3e330e8926.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="playing.css">
+     <script src="script.js"></script>
+</head>
+<body onload="changeLyricsColor()">
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 3665.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <span class="backarrow">
+     <a href="index.html" id="return">  <i class="fas fa-arrow-left"></i></a>
+    </span>
+    <div class="picture-container">
+      
+       <img src="https://images.genius.com/8320174159b68dd3767a02b489a88231.1000x1000x1.jpg" alt="" id="songimage">
+    </div>
+    <div class="controls">
+        <span class="back" onclick="function prev(){location.replace('song-three.html')};prev()">
+            <i class="fas fa-step-backward"></i>
+         </span> 
+     <span class="play" onclick="playsong()" style="border: 0.5px solid rgba(0, 0, 0, 0.575); border-radius: 50%; padding: 9px;">
+        <i class="fas fa-play" id="pauseimage"></i>
+     </span>
+     <span class="next" onclick="function next(){location.replace('song-five.html')};next()">
+        <i class="fas fa-step-forward"></i>
+     </span>
+     
+    </div>
+    <!-- <div class="playlist">
+        <span style="font-size: 20px;color: rgb(97, 92, 92);">playlist</span>
+        <span style="font-size: 22px;"><b>Latest trend EP</b></span>
+    </div> -->
+    <div class="functionalities">
+        <span class="love" onclick="love()">
+            <i class="fas fa-heart"></i>
+        </span>
+        <span class="replay" onclick="replay()">
+            <i class="fas fa-redo"></i>
+        </span>
+        <span class="shuffle" onclick="shuffle()">
+            <i class="fas fa-random"></i>
+        </span>
+    </div>
+    <div class="reactor">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <div class="chill-mode" onclick="chillMode()">
+        <span><i class="fas fa-headphones"></i>     chill mode     <i class="fas fa-headphones"></i></span>
+    </div>
+    <div class="song-content">
+        <span class="name">
+            Coming for you
+        </span>
+        <span class="artist">
+            Switch OTR
+        </span>
+    </div>
+    <div class="range">
+        <input type="range" id="ranger" value="0" min="0" max="100">
+        
+    </div>
+    <audio  id="myaudio" controls>
+       
+        <source src="Switch-OTR-Coming-For-You-Sometimes-I-Look-Up-In-The-Sky-via-Naijafinix.com_.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <div id="lyrics">
+  
+        <span id="mainlyrics">
+            <p>Lyrics</p>
+            Sometimes, man, I look up to the sky
+(I'll-I'll) I'll ask my God, why I lost a couple members
+My niggas riding if you violate one the guys
+(You-you) you better hide, you better stay inside
+'Cause we're coming for you
+Sometimes, man, I look up to the sky
+(I'll-I'll) I'll ask my God, why I lost a couple members
+My niggas riding if you violate one the guys
+(You-you) you better hide, you better stay inside
+'Cause we're coming for you
+See, I ain't really inna the verbal
+My broski strapped, no Dyke, no Virgil
+The van might buss that circle
+See, I'm tryna blow off this music ting
+And pray that I end up commercial
+And 'bout time that I make some records
+Show them why that I go universal
+('Cause I can't) 'cause I can't get stuck in the ends
+I need me a yard with a big ass fence
+Lambo truck or Mercedes Benz
+No fake love, no need to pretend
+If I cut you off, it's straight intent
+Guys out here tryna drill and repent
+Same bad B that I need in defence
+The J1's coulda been A1, but I can't follow the latest trends
+Broski might handle the can and let off shots, 'cause the bullets bisexual
+(It's really) it's really for them boy there, can definitely hit that bitch right next to you
+Everytime I rap on the beat, gotta show them why man feels presentable
+And chicks love pick and choose their guys like a video game collectable
+Sometimes, man, I look up to the sky
+(I'll-I'll) I'll ask my God, why I lost a couple members
+My niggas riding if you violate one the guys
+(You-you) you better hide, you better stay inside
+'Cause we're coming for you
+Sometimes, man, I look up to the sky
+(I'll-I'll) I'll ask my God, why I lost a couple members
+My niggas riding if you violate one the guys
+(You-you) you better hide, you better stay inside
+'Cause we're coming for you
+Bare man change, people fake (mm-mm)
+The world so fucked nowadays, I don't trust no one
+'Cause they lied to my face (they lied)
+I can't stop working, we all die one day
+(Back) back then, I was lonely (lonely)
+I ain't got time for these phonies (phonies)
+Got my bro like Zack got Cody
+I'm a top boy like Modie (ah-ah)
+Anti-social, I don't like to socialize
+They cap on the net, that's social lies
+When brodie died, I cried, that's real life
+I feel a way, I just don't feel right
+Could've been homeless
+My heart so cold, it's frozen
+DTB, I find it hard to open
+I've been busy livin' life in the moment
+Reason why I ain't got time to lotion
+Sometimes, man, I look up to the sky
+(I'll-I'll) I'll ask my God, why I lost a couple members
+My niggas riding if you violate one the guys
+(You-you) you better hide, you better stay inside
+'Cause we're coming for you
+            </span>
+            </div>
+</body>
+</html>

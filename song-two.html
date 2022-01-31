@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3e330e8926.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="playing.css">
+     <script src="script.js"></script>
+</head>
+<body onload="changeLyricsColor()">
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 3665.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <span class="backarrow">
+     <a href="index.html" id="return">  <i class="fas fa-arrow-left"></i></a>
+    </span>
+    <div class="picture-container">
+      
+       <img src="https://cdns-images.dzcdn.net/images/cover/3f11f5b51916627b66177ea2dbad8203/500x500.jpg" alt="" id="songimage">
+    </div>
+    <div class="controls">
+        <span class="back" onclick="function prev(){location.replace('song-one.html')};prev()">
+            <i class="fas fa-step-backward"></i>
+         </span> 
+     <span class="play" onclick="playsong()" style="border: 0.5px solid rgba(0, 0, 0, 0.575); border-radius: 50%; padding: 9px;">
+        <i class="fas fa-play" id="pauseimage"></i>
+     </span>
+     <span class="next" onclick="function next(){location.replace('song-three.html')};next()">
+        <i class="fas fa-step-forward"></i>
+     </span>
+     
+    </div>
+    <!-- <div class="playlist">
+        <span style="font-size: 20px;color: rgb(97, 92, 92);">playlist</span>
+        <span style="font-size: 22px;"><b>Latest trend EP</b></span>
+    </div> -->
+    <div class="functionalities">
+        <span class="love" onclick="love()">
+            <i class="fas fa-heart"></i>
+        </span>
+        <span class="replay" onclick="replay()">
+            <i class="fas fa-redo"></i>
+        </span>
+        <span class="shuffle" onclick="shuffle()">
+            <i class="fas fa-random"></i>
+        </span>
+    </div>
+    <div class="reactor">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <div class="chill-mode" onclick="chillMode()">
+        <span><i class="fas fa-headphones"></i>     chill mode     <i class="fas fa-headphones"></i></span>
+    </div>
+    <div class="song-content">
+        <span class="name">
+            Commitment Issue 
+               </span>
+        <span class="artist">
+            Central Cee
+        </span>
+    </div>
+     
+    <div class="range">
+        <input type="range" id="ranger" value="0" min="0" max="100">
+        
+    </div>
+    <audio  id="myaudio" controls>
+        
+        <source src="Central-Cee-Commitment-Issues-NaijaPreyNG.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <div id="lyrics">
+       
+        <span id="mainlyrics">
+            <p>Lyrics</p>
+            [Intro]
+(Mokuba)
+
+[Chorus]
+I got commitment issues but I'm tryna fix that for you
+If I can’t afford that bag that you want then I would lick that for you, huh
+I wanna be there for you, I knew that the day I saw you
+Too many times we argue, sorry for all of the names I called you
+Shoulda never called you a bitch but I did, now you're pissed, tryna cut my clothes (Don't do that)
+Should have deleted that text, then you wouldn’t have known that I fucked those hoes (Alright)
+Don't act like you care how I feel, don't act like you care how I feel, you don't
+Don't like how you act so spoilt, you start move mad when I tell you "No"
+
+[Verse 1]
+But I wanna make it known (Alright)
+I gotta take my time with love, so we gotta take it slow (Tek time)
+I'm not used to this type of stuff but I can still make you moan (Anytime)
+Anytime that you want, I can lay that (Lay that)
+You wait on the day that I say "I love you too" but I just can't say that (Say that)
+You want that bag, I'ma hit that trap, in a week I’ll make that purchase (I’ll buy that)
+One touch make her leg start shake, make her legs start shake like I make you nervous
+Every time that I rap 'bout hoes, I know that you hate those lyrics
+I don’t believe in love but that doesn't mean I don't take you serious
+
+[Chorus]
+I got commitment issues but I'm tryna fix that for you
+If I can’t afford that bag that you want then I would lick that for you, huh
+I wanna be there for you, I knew that the day I saw you
+Too many times we argue, sorry for all of the names I called you
+Shoulda never called you a bitch but I did, now you're pissed, tryna cut my clothes (Don't do that)
+Should have deleted that text, then you wouldn't have known that I fucked those hoes (Alright)
+Don't act like you care how I feel, don't act like you care how I feel, you don't
+Don't like how you act so spoilt, you start move mad when I tell you "No"
+[Verse 2]
+I got commitment issues (I do)
+I know that your ex still miss you (I know)
+You can't get enough of my love 'cause I give you a fuck that your ex can't give you, ha
+Send the location (Skrrt), I'm speeding 'cause I got no patience
+Twenty bags on trainers, think I'm famous, I got a lot of hoes though lately (Ah)
+I get a lot of dough though lately, and I get paid on the promo lately
+A lot of fake love in the air, can't go nowhere on my solo lately
+Me and her just argue daily, she knows that I trap so her marge don't rate me
+When I don't text back, I ain't with a yat, I'm in the bando, baby
+
+[Chorus]
+I got commitment issues but I'm tryna fix that for you
+If I can't afford that bag that you want then I would lick that for you, huh
+I wanna be there for you, I knew that the day I saw you
+Too many times we argue, sorry for all of the names I called you
+Shoulda never called you a bitch but I did, now you're pissed, tryna cut my clothes (Don't do that)
+Should have deleted that text, then you wouldn't have known that I fucked those hoes (Alright)
+Don't act like you care how I feel, don't act like you care how I feel, you don't
+Don't like how you act so spoilt, you start move mad when I tell you "No"
+                        </span>
+            </div>
+</body>
+</html>
